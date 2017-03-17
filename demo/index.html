@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./jquery-3.1.1.js"></script>
+    <script src="../jQuerySlider.js"></script>
+    <link rel="stylesheet" href="../jQuerySlider.css">
+    <title>jQuerySlider Demo</title>
+    <style lang="css">
+    .sliderContainer {
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -150px 0 0 -200px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="sliderContainer">
+        <img src="./img/cat-2083492_1920.jpg" alt="img1">
+        <img src="./img/fox-1284512_1920.jpg" alt="img2">
+        <img src="./img/fuchs-1310840_1920.jpg" alt="img3">
+        <img src="./img/mongoose-496374_1920.jpg" alt="img4">
+    </div>
+    <script>
+    jQuery(document).ready(function($) {
+        $('.sliderContainer').jQuerySlider({
+            interval: 3000,
+            speed: 800
+        })
+    });
+    </script>
+</body>
+
+</html>
